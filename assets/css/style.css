@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap");
+@font-face {
+  font-family: "Necto Mono";
+  src: url("font/Necto-Mono.woff2") format("woff2"), url("font/Necto-Mono.woff") format("woff");
+}
+html {
+  -webkit-overflow-scrolling: touch;
+  color: white;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  text-rendering: initial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.serif {
+  font-family: "Montaga", serif;
+}
+
+.sans {
+  font-family: "Chivo", sans-serif;
+}
+
+.sans-condensed {
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+.mono {
+  font-family: "Inconsolata", monospace;
+}
+
+.contract {
+  letter-spacing: -2px;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mt-5 {
+  margin-top: 10rem;
+}
+@media screen and (max-width: 900px) {
+  .mt-5 {
+    margin-top: 5rem;
+  }
+}
+
+.mb-5 {
+  margin-bottom: 10rem;
+}
+@media screen and (max-width: 900px) {
+  .mb-5 {
+    margin-bottom: 5rem;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+@media screen and (min-width: 1801px) {
+  body {
+    max-width: 1780px;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 1800px) {
+  body {
+    max-width: 1580px;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    max-width: 1180px;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    max-width: 870px;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 599px;
+    margin: 0.5rem auto;
+    font-size: 1.2rem;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+.header div {
+  display: flex;
+  height: 100%;
+  width: 10rem;
+}
+@media screen and (max-width: 900px) {
+  .header {
+    height: 4rem;
+  }
+  .header div {
+    width: 5rem;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.row div {
+  width: 100%;
+  padding: 1rem;
+}
+@media screen and (max-width: 900px) {
+  .row {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .row div {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.spacer {
+  height: 2rem;
+}
+@media screen and (max-width: 900px) {
+  .spacer {
+    height: 1rem;
+  }
+}
+
+h1 {
+  width: 90%;
+  letter-spacing: -1px;
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+}
+
+p {
+  margin-block: 0;
+  line-height: 1.35;
+}
+
+a {
+  font-family: "Chivo", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  transition: 0.3s;
+}
+
+a:hover {
+  scale: 1.05;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+.img-col {
+  z-index: -100;
+  width: 30% !important;
+}
+.img-col img {
+  width: 75%;
+}
+@media screen and (max-width: 900px) {
+  .img-col {
+    width: 50% !important;
+  }
+  .img-col img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .img-col {
+    width: 60% !important;
+  }
+  .img-col img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .img-col {
+    width: 70% !important;
+  }
+  .img-col img {
+    width: 90%;
+  }
+}
+
+.text-col {
+  width: 75% !important;
+}
+@media screen and (max-width: 900px) {
+  .text-col {
+    width: 70% !important;
+  }
+}
+
+.logo,
+.logo:hover {
+  margin-top: 2rem;
+  text-decoration: none;
+  border-bottom: none;
+  font-weight: 300;
+}
+@media screen and (max-width: 900px) {
+  .logo,
+.logo:hover {
+    margin-top: 1rem;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center !important;
+  width: 50%;
+  font-size: 1rem;
+  opacity: 0.25;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 900px) {
+  .footer {
+    width: 90%;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+@media screen and (max-width: 900px) {
+  .links {
+    flex-direction: column;
+  }
+}
+
+a.logo img {
+  width: 10rem;
+}
+
+/*# sourceMappingURL=style.css.map */

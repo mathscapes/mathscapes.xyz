@@ -1,0 +1,76 @@
+@import "_fonts";
+@import "_mixins";
+
+$background-color: black;
+$foreground-color: white;
+$serif-font: "Montaga", serif;
+$sans-font: "Chivo", sans-serif;
+$sans-condensed-font: "Cabin Condensed", sans-serif;
+$mono-font: "Inconsolata", monospace;
+
+html {
+    -webkit-overflow-scrolling: touch;
+    color: $foreground-color;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    text-rendering: initial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.serif {
+    font-family: $serif-font;
+}
+
+.sans {
+    font-family: $sans-font;
+}
+
+.sans-condensed {
+    font-family: $sans-condensed-font;
+}
+
+.mono {
+    font-family: $mono-font;
+}
+
+.contract {
+    letter-spacing: -2px;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.opacity-25 {
+    opacity: 0.25;
+}
+
+.mr-2 {
+    margin-right: 2rem;
+}
+
+.mt-5 {
+    margin-top: 10rem;
+
+    @include sm {
+        margin-top: 5rem;
+    }
+    
+}
+
+.mb-5 {
+    margin-bottom: 10rem;
+    @include sm {
+        margin-bottom: 5rem;
+    }
+}
